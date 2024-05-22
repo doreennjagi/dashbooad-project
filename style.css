@@ -82,7 +82,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-    position: fixed;
+    position:relative;
     height: 100px;
     width: 100%; 
     padding: 0 20px;
@@ -207,8 +207,8 @@ body {
 .project-card {
     width:250px;
     height: 200px;
-    background: linear-gradient(purple, red);
-    color: #fff;
+    background: linear-gradient(rgb(216, 127, 216), rgb(238, 158, 158));
+    color: #e7d9d9;
     font-size: 25px;
     text-align: center;
     border-radius: 2px;
@@ -218,6 +218,7 @@ body {
 
 }
 .project-card h3 {
+    color: #333;
     font-size: 22px;
     font-weight: bold;
     margin: 0 0 10px 0;
@@ -229,3 +230,20 @@ body {
     margin: 0;
     text-align: center;
 }
+
+.project-card.project-stats {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.project-stats i {
+    font-size: 10px; 
+    margin-left: 20px; 
+    color: #252323;
+}
+
+
