@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    outline:0;
     border: none;
     box-sizing: border-box;
 }
@@ -9,7 +8,7 @@
 body {
     display: flex;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #e879f9;
+    
 }
 
 .sidebar {
@@ -75,6 +74,7 @@ body {
     position: relative;
     background: #926c77;
     width: 100%;
+    height: 100vh;
     padding:1rem;
 }
 .header-wrapper {
@@ -185,6 +185,11 @@ body {
 .button:hover{
     background-color: #0069d9;
 }
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px
+}
 
 
 .content {
@@ -245,5 +250,26 @@ body {
     margin-left: 20px; 
     color: #252323;
 }
+.Announcements{
+    display: flex;
+    background-color: #641d41;
+    margin: 10px;
 
+}
+.announce-card{
+    width: 250px;
+    font-size: 12px;
+    border-radius: 2px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.announce-card h3{
+    font-size: small;
+}
+.announce-card p{
+    color: #ebdede;
+    font-size: 12px;
+
+}
 
